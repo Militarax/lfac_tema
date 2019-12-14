@@ -1,4 +1,5 @@
 I need this: "maxim.txt"
+I need this: "maxim.txt"
 
 I have not seen this type before A
 Ohh come on!
@@ -32,8 +33,7 @@ do you really need it?(int) a[1],b[10],c;
 
 
 Ohh come on!
-a(1,2,a()) + a1(a1()) + A.f(a1+a1(),a1-a1) and A.f;
-a(1,2,a()) + a1(a1()) + A.f(a1+a1(),a1-a1) and A.f;
+a plus al minus -1;
 	if(i)
 		Ohh come on!
 		Alright!
@@ -45,14 +45,12 @@ a(1,2,a()) + a1(a1()) + A.f(a1+a1(),a1-a1) and A.f;
 		Alright!
 	else
 		Ohh come on!
-		for(a<==1;a<1;a+1)
+		for(a<==1;a<1;a plus 1)
 		Ohh come on!
 		Alright!
 		Alright!
 	while(2)
 	Ohh come on!
 	you shall not pass!!!;
-	a(1,2,a()) + a1(a1()) + A.f(a1+a1(),a1-a1) and A.f;
 	Alright!
-	a(1,2,a()) + a1(a1()) + A.f(a1+a1(),a1-a1) and A.f;
 Alright! 

@@ -25,6 +25,7 @@
 "else"															{ return ELSE; }
 "for"															{ return FOR; }
 "while"															{ return WHILE; }
+"eval"															{ return EVAL; }
 "<=" 															{ return LEQ; }
 "==" 															{ return EQ; }
 "!=" 															{ return NEQ; }
@@ -34,8 +35,10 @@
 "//" 															{ return DIV; }
 "%"	 															{ return MOD; }
 "<=="															{ return ASSIGN; }
-[0-9]+															{ return INTNUMBER; }
-[0-9]+"."[0-9]+													{ return FLOATNUMBER; }	
+"minus"															{ return MINUS; }
+"plus"															{ return PLUS; }		
+"-"?[0-9]+															{ return INTNUMBER; }
+"-"?[0-9]+"."[0-9]+													{ return FLOATNUMBER; }	
 "["[1-9][0-9]*"]"												{ return DIM; }
 [_A-Za-z][_A-Za-z0-9]* 											{ return ID; }
 \"[^\"\n]*\"													{ return STRING; }
