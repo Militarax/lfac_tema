@@ -1,56 +1,50 @@
-I need this: "maxim.txt"
-I need this: "maxim.txt"
+I need this: "maxim.txt";
+I need this: "maxim.txt";
 
 I have not seen this type before A
-Ohh come on!
-	variables:
-	
-	I have not seen this type before A
-Ohh come on!
+~
 	variables:
 	do you really need it?(int) a[1];
 	functions:
-	f(int a, int b);
-	f(int a, int b);
-Alright!
-	do you really need it?(int) a[1];
-	functions:
-	f(int a, int b);
-	f(int a, int b);
-Alright!
+	int f(int a, int b) 
+	{ 
+		
+		if(1) 
+		~ 
+			1; 
+		/~ 
+		
+		return 2;
+	}
+	int f(int a, int b[1][2]) { 1+2+2; return 1+1;}
+/~
 
-I have not seen this type before A
-Ohh come on!
-	variables:
-	do you really need it?(int) a[1];
-	functions:
-	f(int a, int b);
-	f(int a, int b);
-Alright!
+This guys will not change(int) x[1] <== 1,y <== 1;
+This guys will not change(string) s <== "A";
+This guys will not change(float) s <== 1.01;
 
-This guys will not change(int) x[1],y;
-do you really need it?(int) a[1],b[10],c;
+do you really need it?(int) a[1],b[10],c[23],q;
+do you really need it?(A) a[100][100];
 
-
-Ohh come on!
-a plus al minus -1;
-	if(i)
-		Ohh come on!
-		Alright!
+~
+a <== 1 + 1 - a1 + f1() * True - False and f1(f1(x+5,f2(y)),a) or A.z() / A.s -1 - -9 + a[1][1][1];
+	if(x+5 < 6 and f1(f1(x+5,f2(y)),a) > 2 or A.z() / A.s != 4+x)
+		~
+		/~
 	elseif(1)
-		Ohh come on!
+		~
 			while(1)
-			Ohh come on!
-			Alright!
-		Alright!
+			~
+			/~
+		/~
 	else
-		Ohh come on!
-		for(a<==1;a<1;a plus 1)
-		Ohh come on!
-		Alright!
-		Alright!
+	~
+		for(a<==1;a<1;a + 1)
+		~
+	/~
+	/~
 	while(2)
-	Ohh come on!
+	~
 	you shall not pass!!!;
-	Alright!
-Alright! 
+	/~
+/~ 

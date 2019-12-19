@@ -7,11 +7,11 @@
 "do you really need it?" 										{ return LET; }
 "main"															{ return MAIN; }
 "This guys will not change"										{ return CONST; }
-"I have not seen this type before"								{ return USERTYPE; }
+"I have not seen this class before"								{ return USERTYPE; }
 "variables"														{ return VARS; }
 "functions"														{ return FUNCTIONS; }	
-"Ohh come on!"													{ return BGIN; }
-"Alright!"														{ return END; }
+"~"																{ return BGIN; }
+"/~"															{ return END; }
 "True"															{ return TRUE; }
 "False"															{ return FALSE; }
 "and"															{ return AND;}
@@ -26,6 +26,7 @@
 "for"															{ return FOR; }
 "while"															{ return WHILE; }
 "eval"															{ return EVAL; }
+"return"														{ return RETURN;}
 "<=" 															{ return LEQ; }
 "==" 															{ return EQ; }
 "!=" 															{ return NEQ; }
@@ -35,10 +36,12 @@
 "//" 															{ return DIV; }
 "%"	 															{ return MOD; }
 "<=="															{ return ASSIGN; }
-"minus"															{ return MINUS; }
-"plus"															{ return PLUS; }		
-"-"?[0-9]+															{ return INTNUMBER; }
-"-"?[0-9]+"."[0-9]+													{ return FLOATNUMBER; }	
+"-"																{ return MINUS; }
+"+"																{ return PLUS; }
+"*"																{ return MUL; }
+"/"																{ return IMP; }		
+[0-9]+															{ return INTNUMBER; }
+[0-9]+"."[0-9]+													{ return FLOATNUMBER; }	
 "["[1-9][0-9]*"]"												{ return DIM; }
 [_A-Za-z][_A-Za-z0-9]* 											{ return ID; }
 \"[^\"\n]*\"													{ return STRING; }
