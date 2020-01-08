@@ -1,0 +1,40 @@
+I have not seen this class before coolClass
+~
+	variables:
+	do you really need it?(int) count;
+	functions:
+	int func(int abc, char bde) {return 0;}
+
+	string getString(int a, string d) {return 2;}
+/~
+
+
+This guys will not change(int) constanta;
+This guys will not change(string) cuv_con;
+
+do you really need it?(int) a, b, c;
+do you really need it?(float) bigboy;
+do you really need it?(char) litera;
+do you really need it?(string) cuvant;
+do you really need it?(boolean) adev, fals;
+
+int fig(int abc, char bde) {return 0;}
+
+
+
+~
+constanta <== 4;
+bigboy <== 1.4;
+litera <== 'a';
+litera <== 'b';
+cuv_con <== "bistro";
+count <== 5;
+b <== 3;
+c <== b;
+adev <== True;
+fals <== False;
+cuvant <== "albus";
+eval(a*(1+ 2//2 * 4 + c * 2) + True + False);
+eval(123333*2);
+getString(constanta, cuvant);
+/~

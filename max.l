@@ -1,17 +1,18 @@
 %{
 #include <stdio.h>
+#include "max.h"
 #include "y.tab.h"
 %}
 %%
-"int"|"float"|"string"|"boolean"|"char" 						{ return TYPE; }
+"int"|"float"|"string"|"boolean"|"char" 						{ yylval.value.strval=strdup(yytext); return TYPE; }
 "do you really need it?" 										{ return LET; }
 "main"															{ return MAIN; }
 "This guys will not change"										{ return CONST; }
-"I have not seen this type before"								{ return USERTYPE; }
+"I have not seen this class before"								{ return USERTYPE; }
 "variables"														{ return VARS; }
 "functions"														{ return FUNCTIONS; }	
-"Ohh come on!"													{ return BGIN; }
-"Alright!"														{ return END; }
+"~"																{ return BGIN; }
+"/~"															{ return END; }
 "True"															{ return TRUE; }
 "False"															{ return FALSE; }
 "and"															{ return AND;}
@@ -26,6 +27,7 @@
 "for"															{ return FOR; }
 "while"															{ return WHILE; }
 "eval"															{ return EVAL; }
+"return"														{ return RETURN;}
 "<=" 															{ return LEQ; }
 "==" 															{ return EQ; }
 "!=" 															{ return NEQ; }
@@ -35,14 +37,16 @@
 "//" 															{ return DIV; }
 "%"	 															{ return MOD; }
 "<=="															{ return ASSIGN; }
-"minus"															{ return MINUS; }
-"plus"															{ return PLUS; }		
-"-"?[0-9]+															{ return INTNUMBER; }
-"-"?[0-9]+"."[0-9]+													{ return FLOATNUMBER; }	
-"["[1-9][0-9]*"]"												{ return DIM; }
-[_A-Za-z][_A-Za-z0-9]* 											{ return ID; }
-\"[^\"\n]*\"													{ return STRING; }
-\'.\'															{ return CHAR; }
+"-"																{ return MINUS; }
+"+"																{ return PLUS; }
+"*"																{ return MUL; }
+"/"																{ return IMP; }		
+[0-9]+															{ yylval.value.intval=atoi(yytext); yylval.value.type = 3; return INTNUMBER; }
+[0-9]+"."[0-9]+													{ yylval.value.floatval=atof(yytext); yylval.value.type = 4; return FLOATNUMBER; }	
+"["[1-9][0-9]*"]"												{ yylval.value.intval=atoi(yytext); yylval.value.type = 3; return DIM; }
+[_A-Za-z][_A-Za-z0-9]* 											{ yylval.value.strval=strdup(yytext); return ID; }
+\"[^\"\n]*\"													{ yylval.value.strval=strdup(yytext); return STRING; }
+\'.\'															{ yylval.value.charval=yytext[1]; return CHAR; }
 [ \t] ;
 \n 																{ yylineno++; }
 . 																{ return yytext[0]; }

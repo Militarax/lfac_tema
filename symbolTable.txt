@@ -1,0 +1,18 @@
+Variabile:
+Nume: count, tip: int, constanta: 0, valoare: 5
+Nume: constanta, tip: int, constanta: 1, valoare: 4
+Nume: cuv_con, tip: string, constanta: 1, valoare: bistro
+Nume: a, tip: int, constanta: 0, valoare: 0
+Nume: b, tip: int, constanta: 0, valoare: 3
+Nume: c, tip: int, constanta: 0, valoare: 3
+Nume: bigboy, tip: float, constanta: 0, valoare: 1.400000
+Nume: litera, tip: char, constanta: 0, valoare: b
+Nume: cuvant, tip: string, constanta: 0, valoare: albus
+Nume: adev, tip: int, constanta: 0, valoare: 1
+Nume: fals, tip: int, constanta: 0, valoare: 0
+
+
+Functii:
+Nume: func, tip: int si are nevoie de int char 
+Nume: getString, tip: string si are nevoie de int string 
+Nume: fig, tip: int si are nevoie de int char 
